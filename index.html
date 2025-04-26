@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PV Custom Pools - Luxury Pool Design & Construction</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #005b96;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?pool') no-repeat center center/cover;
+            height: 500px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .services h2 {
+            margin-bottom: 30px;
+            color: #005b96;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-item h3 {
+            color: #005b96;
+            margin-bottom: 15px;
+        }
+        
+        /* Form Section */
+        .contact-form {
+            background-color: #f0f8ff;
+            padding: 50px 0;
+        }
+        
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #005b96;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
+        button {
+            background-color: #005b96;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #003b66;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Replace with your actual logo -->
+            <img src="your-logo.png" alt="PV Custom Pools Logo" class="logo">
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Transform Your Backyard Into a Paradise</h1>
+        <p>Custom-designed luxury pools tailored to your lifestyle and property</p>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services container">
+        <h2>Our Custom Pool Services</h2>
+        <p>We specialize in creating unique, high-quality swimming pools that perfectly match your vision and needs.</p>
+        
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Custom Pool Design</h3>
+                <p>Our expert designers work with you to create the perfect pool for your space, reflecting your style and meeting your specific requirements.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>Pool Construction</h3>
+                <p>Using only the highest quality materials and construction techniques to ensure your pool is built to last for years to come.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>Luxury Features</h3>
+                <p>From waterfalls and lighting to spas and fire features, we can incorporate any luxury element to make your pool truly spectacular.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>Get Your Free Custom Pool Quote</h2>
+            
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="project">Project Type</label>
+                    <select id="project" name="project">
+                        <option value="new-pool">New Pool Construction</option>
+                        <option value="renovation">Pool Renovation</option>
+                        <option value="features">Adding Features/Upgrades</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Project</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                
+                <button type="submit">Request Free Quote</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>PV Custom Pools</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@pvcustompools.com</p>
+                <p>Address: 123 Pool Design Ave, Your City, State 12345</p>
+            </div>
+            
+            <p>&copy; 2025 PV Custom Pools. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+Add initial landing page
